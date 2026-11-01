@@ -1,0 +1,74 @@
+# ── 依赖 ─────────────────────────────────────────────
+node_modules
+.pnp
+.pnp.js
+
+# ── 构建产物 ─────────────────────────────────────────
+dist
+dist-ssr
+*.local
+
+# ── 日志 ─────────────────────────────────────────────
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── 环境变量（含 API key，切勿提交）──────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Netlify ──────────────────────────────────────────
+# 只忽略本地运行/构建产物；netlify.toml、netlify/functions/ 必须提交
+.netlify/functions/
+.netlify/functions-serve/
+.netlify/db/
+.netlify/v1/
+.netlify/state.json
+.netlify/.state.json
+
+# ── Android (Capacitor) 构建产物 ─────────────────────
+android/app/build
+android/build
+android/.gradle
+android/local.properties
+android/capacitor-cordova-android-plugins/build
+android/.idea
+*.apk
+*.aab
+*.keystore
+!debug.keystore
+
+# ── 打包归档 ─────────────────────────────────────────
+releases/
+
+# ── 测试与覆盖率 ─────────────────────────────────────
+coverage
+.nyc_output
+
+# ── 编辑器与系统文件 ─────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── Python（图标生成脚本）────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ── Trellis 框架本地状态（规格文档需提交）────────────
+.trellis/.developer
+.trellis/.runtime/
+.trellis/workspace/
